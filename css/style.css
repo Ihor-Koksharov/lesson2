@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(../images/man-with-glass.png),
+    url(../images/tabble-for-fon.jpg);
+  background-color: #d5d7d6;
+  background-repeat: no-repeat;
+  background-position: 100% 0, center;
+  background-size: 150px, cover;
+}
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #b3b3b350;
+}
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header {
+  /* background-color: rgb(20, 136, 136);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100vw; */
+  background-color: #8e7171;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.navbar-link {
+  padding: 0.5em 1em;
+  background-color: rgb(29, 83, 183);
+  display: block;
+}
